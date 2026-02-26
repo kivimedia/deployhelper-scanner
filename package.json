@@ -1,0 +1,37 @@
+{
+  "name": "deployhelper-scanner",
+  "version": "0.1.0",
+  "description": "Scan your local dev folders for API keys and credentials, then upload them securely to DeployHelper",
+  "type": "module",
+  "bin": {
+    "dhscan": "dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsx src/cli.ts",
+    "start": "node dist/cli.js"
+  },
+  "keywords": [
+    "deployhelper",
+    "credentials",
+    "env",
+    "scanner",
+    "vault"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "glob": "^11.0.0",
+    "inquirer": "^9.3.7",
+    "ora": "^8.1.1",
+    "yaml": "^2.6.0"
+  },
+  "devDependencies": {
+    "@types/inquirer": "^9.0.9",
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
