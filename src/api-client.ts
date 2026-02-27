@@ -8,6 +8,7 @@ type VaultSubmission = {
   key_name: string;
   value: string;
   environment?: string;
+  source_file?: string;
 };
 
 type SubmitResult = {

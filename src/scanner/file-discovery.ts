@@ -60,7 +60,7 @@ export async function discoverFiles(scanPath: string, deep = false): Promise<Dis
   const allPatterns = [...ENV_PATTERNS, ...CONFIG_PATTERNS];
   const ignoreGlobs = IGNORE_DIRS.map(d => `**/${d}/**`);
 
-  const maxDepth = deep ? 8 : 4;
+  const maxDepth = deep ? 30 : 30;
 
   const matches = await glob(allPatterns, {
     cwd: scanPath,
